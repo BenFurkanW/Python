@@ -1,12 +1,12 @@
-print("Sezar Şifresi Kırma Programına Hoşgeldiniz.")
-sifresiz=input("Şifresi kırılacak metni giriniz:")
-def sifrele(metin):
-    sifrelimetin=""
-    for harf in metin:
-        asciikod=ord(harf)
+print("Welcome to the Caesar Code Cracking Program.")
+sifresiz=input("Enter the text to be decrypted:")
+def encrypt(text):
+    YourCipherText=""
+    for character in text:
+        asciikod=ord(character)
         asciikod=asciikod-3
         karakterkod=chr(asciikod)
-        sifrelimetin=sifrelimetin+karakterkod
-    print("Şifresi kırılmamış metin:",metin,"\n Şifresi kırılan metin:",sifrelimetin)
+        YourCipherText=YourCipherText+karakterkod
+    print("password unbroken text:",text,"\ndecrypted text:",YourCipherText)
 
-sifrele(sifresiz)
+encrypt(sifresiz)
